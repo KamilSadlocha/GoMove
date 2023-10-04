@@ -64,7 +64,7 @@ Be active, stay healthy, and enjoy sports together with "GoMove"! 💪🌞
 1. **Clone the Repository**: Clone the project repository to your computer:
 
     ```bash
-    git clone https://github.com/CodecoolGlobal/el-proyecte-grande-sprint-1-java-dmrozik87
+    git clone https://github.com/KamilSadlocha/GoMove.git
     ```
 
 2. **Navigate to the Backend Directory**: Open a terminal and navigate to the backend directory:
