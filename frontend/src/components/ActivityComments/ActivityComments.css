@@ -1,0 +1,117 @@
+.comments {
+    border: 1px solid #8d8d8d;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.singleComment-left {
+    border-radius: 0.5em;
+    margin-top: 10px;
+    padding: 10px;
+    width: 60%;
+    background-color: #f8f8f8;
+}
+
+.singleComment-right {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5em;
+    margin: 10px 0 0 auto;
+    padding: 10px;
+    width: 60%;
+    background-color: #D5FFD0;
+    align-items: end;
+    text-align: end;
+}
+
+.comment-username {
+    font-weight: bold;
+}
+
+.message {
+    margin-top: 5px;
+}
+
+.datetime-left {
+    font-size: 0.7em;
+    margin: 0 auto 0 10px;
+}
+
+.datetime-right {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.7em;
+    margin: 0 10px 0 auto;
+}
+
+.buttons {
+    font-size: 0.7em;
+    margin-top: 5px;
+}
+
+.blueButton,
+.redButton {
+    cursor: pointer;
+}
+
+.blueButton {
+    color: blue;
+}
+
+.redButton {
+    color: red;
+}
+
+.editTextarea {
+    width: 100%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: none;
+    font-family: Arial, sans-serif;
+}
+
+.newCommentTextarea {
+    margin-top: 30px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: none;
+    font-family: Arial, sans-serif;
+
+}
+
+.addCommentSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-self: center;
+}
+
+.addButton {
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 20%;
+    border: none;
+    font-size: 16px;
+    transition: transform .5s, background-color .5s;
+    background-color: #D5FFD0;
+    color: #2a2a2a;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.addButton:hover {
+    transform: scale(1.2);
+    transition: transform .5s, background-color .5s;
+    cursor: pointer;
+    background-color: greenyellow;
+}

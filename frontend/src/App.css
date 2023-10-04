@@ -1,0 +1,157 @@
+a:hover, button:hover{
+    cursor: pointer;
+}
+
+body {
+    overflow: hidden;
+}
+.ReactModal__Content {
+    position: relative;
+    top: -520px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.ReactModal__Content--after-open {
+    transform: translateY(0);
+}
+
+
+@keyframes slideFromTopLoginModal {
+    from {
+        top: -80%;
+    }
+    to {
+        top: 30%;
+    }
+}
+
+.login-modal {
+    animation: ease;
+    animation-duration: .8s;
+    animation-name: slideFromTopLoginModal;
+}
+
+@keyframes slideFromTopNoMoreActivitiesModal {
+    from {
+        top: -40%;
+    }
+    to {
+        top: 5%;
+    }
+}
+
+
+.no-more-activities-modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: ease;
+    animation-duration: .8s;
+    animation-name: slideFromTopNoMoreActivitiesModal;
+}
+@keyframes slideFromTopJoinedActivityModal {
+    from {
+        top: -40%;
+    }
+    to {
+        top: 5%;
+    }
+}
+
+
+.joined-activity-modal{
+    animation: ease;
+    animation-duration: .8s;
+    animation-name: slideFromTopJoinedActivityModal;
+}
+
+@keyframes slideFromTopActivityAddedModal {
+    from {
+        top: -40%;
+    }
+    to {
+        top: 10%;
+    }
+}
+
+
+.activity-added-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: ease;
+    animation-duration: .8s;
+    animation-name: slideFromTopActivityAddedModal;
+}
+
+@keyframes slideFromTopActivityDeletedModal {
+    from {
+        top: -40%;
+    }
+    to {
+        top: 10%;
+    }
+}
+
+
+.activity-deleted-modal{
+    animation: ease;
+    animation-duration: .8s;
+    animation-name: slideFromTopActivityDeletedModal;
+}
+
+@keyframes slideFromTopAdditionalProfileInfoModal {
+    from {
+        top: -80%;
+    }
+    to {
+        top: 30%;
+    }
+}
+
+
+.additional-info-modal{
+    animation: ease;
+    animation-duration: .8s;
+    animation-name: slideFromTopAdditionalProfileInfoModal ;
+}
+
+@keyframes slideFromTopUpdateUserInfoModal {
+    from {
+        top: -80%;
+    }
+    to {
+        top: 30%;
+    }
+}
+
+
+.update-user-info-modal{
+    animation: ease;
+    animation-duration: .8s;
+    animation-name: slideFromTopUpdateUserInfoModal ;
+}
+
+@keyframes slideFromTopEmailSentModal {
+    from {
+        top: -80%;
+    }
+    to {
+        top: 10%;
+    }
+}
+
+.email-sent-modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: ease;
+    animation-duration: .8s;
+    animation-name: slideFromTopEmailSentModal;
+}

@@ -1,0 +1,4 @@
+.idea
+/backend/src/main/resources/application.properties
+/frontend/src/assets/images/video_running.gif
+/frontend/.env

@@ -1,0 +1,204 @@
+.activity-page {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: 1024px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.activity-page h1, h2 {
+    display: flex;
+    font-size: 24px;
+    margin-bottom: 10px;
+    justify-content: center;
+    word-break: break-word;
+}
+
+.activity-page-image-container {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}
+
+.activity-page .activity-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.activity-page h3 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.activity-page p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    word-break: break-word;
+}
+
+.activity-page .map-container {
+    margin-top: 20px;
+}
+
+.activity-page .participants {
+    font-style: italic;
+}
+
+.activity-page .loading {
+    font-size: 16px;
+}
+
+.activity-page-middle-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.share-activity {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-right: 20px;
+    width: 300px;
+    height: auto;
+}
+
+.copied-message-alert-container {
+    overflow: hidden;
+}
+
+.copied-message-alert {
+    height: 20px;
+    position: relative;
+    bottom: 20px;
+    transition: bottom .5s;
+}
+
+.share-activity-methods {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 40px;
+    width: 300px;
+    padding: 8px;
+    align-items: center;
+}
+
+.share-icon {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    padding: 10px;
+    margin-left: 15px;
+    transition: transform .5s;
+}
+
+.share-by-copy-button {
+    background: none;
+    border: none;
+    width: 65px;
+    padding: 0;
+}
+
+.share-activity-methods > button > svg:hover {
+    -webkit-box-shadow: 0 0 12px 1px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0 0 12px 1px rgba(66, 68, 90, 1);
+    box-shadow: 0 0 12px 1px rgba(66, 68, 90, 1);
+    border-radius: 50%;
+    transform: scale(1.2);
+    transition: transform .4s, background-color .4s;
+}
+
+.activity-page .place-date {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.activity-page .place-date .place, .date {
+    display: flex;
+    align-items: center;
+}
+
+.activity-page .place-date .date p {
+    padding-left: 20px;
+}
+
+.activity-page .place-date .place p {
+    padding-left: 20px;
+}
+
+.activity-page .users {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.activity-page .participant-info {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 20px;
+    transition: transform .5s;
+}
+
+.activity-page .participant-info:hover {
+    transform: scale(1.2);
+    transition: transform .5s;
+    cursor: pointer;
+}
+
+.activity-page .participant-info p {
+    padding-left: 20px;
+}
+
+.activity-page .info-users {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.activity-page .info-users .icon {
+    background-color: #2a2a2a;
+    border: 2px solid #2a2a2a;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform .4s, background-color .4s;
+}
+
+.activity-page-container {
+    background-color: #d5ffd0;
+}
+
+.activity-page {
+    background-color: white;
+    -webkit-box-shadow: 0 0 12px 1px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0 0 12px 1px rgba(66, 68, 90, 1);
+    box-shadow: 0 0 12px 1px rgba(66, 68, 90, 1);
+}
+
+.share-activity-methods button svg {
+    margin-left: 0;
+}
+
+.activity-page .google-maps {
+    border: 1px solid rgba(175, 175, 175, 0.91);
+    border-radius: 5px;
+}
+
+.top-section {
+    cursor: pointer;
+}
+
+.activity-icon {
+    display: flex;
+    justify-content: center;
+}
+

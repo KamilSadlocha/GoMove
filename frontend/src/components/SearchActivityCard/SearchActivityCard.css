@@ -1,0 +1,101 @@
+.searched-activity-card {
+    width: 400px;
+    height: 170px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 55px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.activity-photo {
+    position: relative;
+}
+
+.searched-activity-card > .activity-photo img {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    object-fit: cover;
+    width: 170px;
+    height: 170px;
+}
+
+.info-section {
+    width: 230px;
+}
+
+.info-section > .activity-title {
+    border-bottom: 1px solid grey;
+    font-size: 16px;
+    white-space: break-spaces;
+    word-break: break-word;
+    margin-top: 0px;
+    padding: 0px 0;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #333;
+}
+
+.info-section > .activity-type {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.info-section > .activity-city {
+    height: 28px;
+    font-size: 12px;
+    margin-bottom: 7px;
+}
+
+.info-section > .activity-date {
+    font-size: 12px;
+    margin-bottom: 7px;
+}
+
+.join-button, .details-button {
+    padding: 3px 10px;
+    background-color: lightgreen;
+    width: 70px;
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+    transition: background-color .4s, transform .4s;
+}
+
+.join-button:hover, .details-button:hover {
+    background-color: #00da00;
+    transform: scale(1.1);
+    transition: background-color .4s, transform .4s;
+}
+
+.searched-card-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) {
+    .searched-activity-card {
+        width: 320px;
+        height: 160px;
+    }
+
+    .searched-activity-card > .activity-photo img {
+        width: 160px;
+        height: 160px;
+    }
+    .info-section > .activity-title {
+        font-size: 14px;
+        height: 35px;
+    }
+    .info-section > .activity-type {
+        font-size:12px;
+    }
+}
+

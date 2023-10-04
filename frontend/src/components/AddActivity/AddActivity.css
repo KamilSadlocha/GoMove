@@ -1,0 +1,148 @@
+.add-activity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    font-family: Arial, sans-serif;
+}
+
+.add-activity-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 500px;
+    border: 1px solid #ccc;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-activity-form label {
+    font-weight: bold;
+    margin: 5px;
+}
+
+.add-activity-form .activity-type-field .activities {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+}
+
+.activity:hover, .activity-add:hover {
+    transform: scale(1.2);
+    transition: transform .5s;
+}
+
+.activity-type-field .activities .activity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 80px;
+    height: 85px;
+    border: 1px solid lightgreen;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: lightgreen;
+    transition: transform .5s;
+}
+
+.activity-type-field .activities .activity-add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 80px;
+    height: 85px;
+    background-color: greenyellow;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 1px solid greenyellow;
+    transition: transform .5s;
+}
+
+.activity-type-field .activities .activity-add p,
+.activity-type-field .activities .activity p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.description-input {
+    resize: none;
+}
+
+.add-activity-form input[type="text"],
+.add-activity-form input[type="date"],
+.description-input,
+.add-activity-form input[type="time"],
+.add-activity-form select {
+    width: 480px;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.description-input {
+    height: 80px;
+}
+
+.submit-btn {
+    width: 500px;
+    background-color: lightgreen;
+    color: #2a2a2a;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: transform .4s ease, background-color .4s ease;
+}
+
+.add-activity-form .submit-btn:hover {
+    background-color: greenyellow;
+    transform: scale(1.1);
+    transition: transform .4s ease, background-color .4s ease;
+}
+
+.activity-type-field p {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.add-activity .google-maps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.add-activity .google-maps p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.add-activity-add-photo{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.add-activity-add-photo button.custom-file-button{
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.activity-picture {
+    width: 200px;
+    object-fit: cover;
+    height: 200px;
+}

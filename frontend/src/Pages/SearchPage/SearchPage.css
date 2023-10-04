@@ -1,0 +1,290 @@
+.activity-search-filters {
+    width: 250px;
+    position: fixed;
+    height: 100vh;
+    border-right: 4px solid lightgreen;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+}
+
+.activity-search-page {
+    display: flex;
+}
+
+.activity-search-filters h4, .activity-search-filters h2 {
+    text-align: center;
+}
+
+.activity-search-filters h4 {
+    margin-top: 0;
+}
+
+.choose-activity-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.search-activity {
+    flex-basis: 30%;
+    margin-bottom: 20px;
+}
+
+.search-activity-add {
+    flex-basis: 30%;
+    margin-bottom: 20px;
+}
+
+
+.choose-activity, .select-city, .date-filters {
+    padding: 20px;
+    border-bottom: 1px grey solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filter-buttons {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.filter-button, .reset-filters-button {
+    background-color: lightgreen;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    color: #2a2a2a;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: transform .4s ease, background-color .4s ease;
+    border: none;
+}
+
+.filter-button:hover, .reset-filters-button:hover {
+    background-color: greenyellow;
+    transform: scale(1.1);
+    transition: transform .4s ease, background-color .4s ease;
+}
+
+.select-city {
+    text-align: center;
+}
+
+.date-filters {
+    display: flex;
+    flex-direction: column;
+}
+
+.date-from-filter, .date-to-filter {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.date-from-filter div, .date-to-filter div {
+    width: 100px;
+}
+
+.select-city {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.city-select {
+    justify-content: center;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid black;
+    width: 200px;
+}
+
+.city-options-field {
+    overflow-x: auto;
+    width: 204px;
+    height: 0;
+    transition: height .5s;
+}
+
+.city-options {
+    overflow-x: auto;
+}
+
+.city-options > div {
+    cursor: pointer;
+}
+
+.activities-carousel {
+    display: flex;
+    justify-content: center;
+    width: calc(100vw - 254px);
+    overflow: hidden;
+    height: 635px;
+}
+
+.found-activities {
+    overflow: hidden;
+    position: absolute;
+    width: calc(100vw - 254px);
+    height: calc(95vh - 40px);
+    left: 254px;
+    background-color: #D5FFD0;
+    display: flex;
+    align-items: center;
+}
+
+.activities-carousel-visible {
+    display: flex;
+    position: relative;
+    transition: bottom .5s;
+}
+
+.active-card {
+    opacity: 1;
+    transform: scale(1.4);
+    transition: transform .5s, opacity .5s;
+}
+
+.non-active-card {
+    opacity: 0.7;
+    transition: transform .5s, opacity .5s;
+}
+
+.manage-searched-buttons {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 246px;
+    left: 30px;
+    padding: 10px;
+}
+
+.manage-searched-buttons button {
+    align-self: center;
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    margin: 10px 0 10px 60px;
+    transition: transform .5s, background-color .5s;
+}
+
+.manage-searched-buttons button:hover {
+    transform: scale(1.2);
+    background-color: green;
+    transition: transform .5s, background-color .5s;
+}
+
+.manage-searched-buttons button.disabled-button {
+    transform: scale(1);
+    cursor: default;
+    background-color: darkgrey;
+    color: grey;
+}
+
+.manage-searched-buttons button.disabled-button:hover {
+    transform: scale(1);
+    background-color: darkgrey;
+}
+
+.manage-searched-buttons button:nth-child(2) svg {
+    position: relative;
+    top: 2px;
+}
+
+.choose-activity p {
+    margin: 0;
+}
+
+.search-activity {
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5px 0 5px 0;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid lightgreen;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: lightgreen;
+    transition: transform .5s;
+}
+
+.search-activity-add {
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5px 0 5px 0;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: greenyellow;
+    border-radius: 15px;
+    cursor: pointer;
+    /*transform: scale(1.2);*/
+    border: 1px solid greenyellow;
+    transition: transform .5s;
+}
+
+.search-activity:hover, .search-activity-add:hover {
+    transform: scale(1.2);
+    transition: transform .5s;
+}
+.scroll-to-top-button{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .activity-search-page {
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .activity-search-filters {
+        width: 100vw;
+        position: relative;
+        height: auto;
+    }
+
+    .found-activities {
+        width: 100vw;
+        left: 0px;
+        position: relative;
+        height: 675px;
+    }
+    .activities-carousel {
+        position: relative;
+        top:20px;
+        width: 100vw;
+        touch-action: none;
+    }
+    .active-card{
+        transform: scale(1.2);
+    }
+    .manage-searched-buttons{
+        display: none;
+    }
+    .scroll-to-top-button{
+        z-index: 5;
+        display: block;
+        position: absolute;
+        left:92vw;
+        width: 8vw;
+        height: 8vw;
+        top:5vh;
+        opacity: 0.8;
+        background-color: black;
+        color: grey;
+        border: none;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+}

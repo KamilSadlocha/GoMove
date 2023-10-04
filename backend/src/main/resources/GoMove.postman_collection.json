@@ -1,0 +1,590 @@
+{
+	"info": {
+		"_postman_id": "d4dce730-d936-4694-b3d7-94c89d999286",
+		"name": "GoMove",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25574616"
+	},
+	"item": [
+		{
+			"name": "users - get all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user - get  by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/users/1111e1a7-7acf-4f50-8275-1449748e96eb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"1111e1a7-7acf-4f50-8275-1449748e96eb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user - get by username",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ6YnlzemVrIiwiaWF0IjoxNjkxODU4OTIzLCJleHAiOjE2OTE5NDUzMjN9.7NMM3BC2ZlBUE10K2V7zmqqWMvmYv0ApmqyrbWiqFqg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/users/name/Dominik",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"name",
+						"Dominik"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user - update",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userEmail\": \"XD@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/update/1111e1a7-7acf-4f50-8275-1449748e96eb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"update",
+						"1111e1a7-7acf-4f50-8275-1449748e96eb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user - enroll to activity",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/users/enroll/2222e1a7-7acf-4f50-8275-1449748e96eb/1111e4ee-06f5-40ab-935e-442074f939a1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"enroll",
+						"2222e1a7-7acf-4f50-8275-1449748e96eb",
+						"1111e4ee-06f5-40ab-935e-442074f939a1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "activities - get all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/activities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"activities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "activities - get future activities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/activities/future",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"activities",
+						"future"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "activity - get by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/activities/1111e4ee-06f5-40ab-935e-442074f939a1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"activities",
+						"1111e4ee-06f5-40ab-935e-442074f939a1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "activities - get by type",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/activities/filter?type=CYCLING",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"activities",
+						"filter"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "CYCLING"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "activities - get by city",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/activities/filter?city=Krzeszowice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"activities",
+						"filter"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "Krzeszowice"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "activities - get by type and city",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/activities/filter?type=CYCLING&city=Krzeszowice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"activities",
+						"filter"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "CYCLING"
+						},
+						{
+							"key": "city",
+							"value": "Krzeszowice"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "activities - get by owner id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/activities/user/2222e1a7-7acf-4f50-8275-1449748e96eb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"activities",
+						"user",
+						"2222e1a7-7acf-4f50-8275-1449748e96eb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "activities - get by participant id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/activities/participant/2222e1a7-7acf-4f50-8275-1449748e96eb",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"activities",
+						"participant",
+						"2222e1a7-7acf-4f50-8275-1449748e96eb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "activity - add new",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"activityType\": \"RUNNING\",\r\n    \"owner\": {\r\n        \"userId\": \"2222e1a7-7acf-4f50-8275-1449748e96eb\"\r\n    },\r\n    \"title\": \"Chodź pobiegać\",\r\n    \"city\": \"Krzeszowice\",\r\n    \"street\": \"Rynek\",\r\n    \"date\": \"2023-08-14\",\r\n    \"time\": \"16:00:00\",\r\n    \"description\": \"Zapraszam na wspólne bieganie\",\r\n    \"participants\": null,\r\n    \"activityPhotoUrl\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/activities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"activities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "activity - update",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"time\": \"22:00:00\",\r\n    \"description\": \"Zapraszam na nocne bieganie\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/activities/update/1111e4ee-06f5-40ab-935e-442074f939a1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"activities",
+						"update",
+						"1111e4ee-06f5-40ab-935e-442074f939a1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "activity - delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/activities/delete/1111e4ee-06f5-40ab-935e-442074f939a1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"activities",
+						"delete",
+						"1111e4ee-06f5-40ab-935e-442074f939a1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "activities - get cities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/activities/cities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"activities",
+						"cities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "comments - get all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/comments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "comments - get by activity id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/comments/1111e4ee-06f5-40ab-935e-442074f939a1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"comments",
+						"1111e4ee-06f5-40ab-935e-442074f939a1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "comment - add new",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"date\": \"2023-07-13\",\r\n    \"time\": \"09:54:19.1904854\",\r\n    \"user\": {\r\n        \"userId\": \"2222e1a7-7acf-4f50-8275-1449748e96eb\"\r\n    },\r\n    \"message\": \"Tak, aktualne\",\r\n    \"activityId\": \"2222e4ee-06f5-40ab-935e-442074f939a1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/comments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "comment - update",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"message\": \"Robimy impreze na koniec?\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/comments/update/11110b30-7557-4a9f-8527-3e50e933fec4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"comments",
+						"update",
+						"11110b30-7557-4a9f-8527-3e50e933fec4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "comment - delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/comments/delete/44440b30-7557-4a9f-8527-3e50e933fec4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"comments",
+						"delete",
+						"44440b30-7557-4a9f-8527-3e50e933fec4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "auth - register user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Zbyszek\",\r\n    \"email\": \"zbyszek@gmail.com\",\r\n    \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "auth - authenticate user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"Zbyszek\",\r\n    \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

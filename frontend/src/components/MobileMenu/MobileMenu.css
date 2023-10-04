@@ -1,0 +1,94 @@
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        width: 100vw;
+        height: 100px;
+        padding: 20px 0px;
+    }
+
+    .navbar .logo {
+        text-align: center;
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .menu-icon {
+        height: 32px;
+        display: block;
+        text-align: center;
+    }
+
+    .mobile-menu-space {
+        overflow: hidden;
+        background: none;
+        position: absolute;
+        left: 0px;
+        top: calc(12vh + 40px);
+        width: 100vw;
+        height: 186.8px;
+    }
+
+    .mobile-menu-open, .mobile-menu-closed {
+        position: absolute;
+        background-color: #2a2a2a;
+        width: 100vw;
+        height: 186.8px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .mobile-menu-open {
+        top: 0px;
+        z-index: 20;
+        transition: top 1s;
+    }
+
+    .mobile-menu-closed {
+        top: -186.8px;
+        z-index: 20;
+        transition: top 1s;
+    }
+
+    .nav-links-mobile a {
+        justify-content: center;
+    }
+
+    .nav-btn-mobile {
+        margin-right: 0px;
+        text-decoration: none;
+        color: lightgreen;
+        height: 21.6px;
+        display: flex;
+        align-items: center;
+    }
+
+    .media-mobile a {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    .media-mobile {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .navbar .login-btn {
+        margin-right: 0;
+    }
+
+    .login-and-profile-container {
+        display: none;
+    }
+
+    .login-and-profile-container-mobile {
+        display: flex;
+        justify-content: center;
+        height: 30px;
+    }
+}

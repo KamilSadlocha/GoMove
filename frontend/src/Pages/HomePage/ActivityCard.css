@@ -1,0 +1,236 @@
+.card {
+    position: relative;
+    display: flex;
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+    padding: 20px;
+    flex-direction: column;
+    background-color: rgba(42, 42, 42, 0.93);
+    color: lightgreen;
+    height: 600px;
+    width: 400px;
+    overflow: hidden;
+    transition: right .5s, transform .5s;
+    cursor: pointer;
+}
+
+.card .top-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 200px;
+    margin-bottom: 20px;
+    width: 400px;
+}
+
+.card .top-section .activity-photo > img {
+    border-radius: 8px;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+}
+
+.card .top-section .title-section {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 180px;
+    min-width: 180px;
+}
+
+.middle-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    flex-direction: row;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+.bottom-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    flex-direction: row;
+    height: 130px;
+}
+
+.participants-container {
+    width: 40%;
+}
+
+.participants {
+    display: flex;
+    align-items: center;
+}
+
+.participants h2 {
+    margin: 0 0 0 8px;
+    justify-content: left;
+    text-align: left;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.location p, .datatime p {
+    margin-bottom: 0;
+}
+
+.location {
+    width: 60%;
+    margin-right: 15px;
+}
+
+.description {
+    padding: 0;
+    height: 130px;
+    justify-content: space-around;
+    width: 60%;
+    margin-right: 15px;
+}
+
+.description p {
+    margin-bottom: 0;
+}
+
+.description h3 {
+    margin-top: 20px;
+}
+
+.map-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+}
+
+.map-button button {
+    /*z-index: 2;*/
+    background-color: darkgrey;
+    height: 30px;
+    width: 140px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color .5s;
+}
+
+.map-button button:hover {
+    background-color: lightgreen;
+    transition: background-color .5s;
+}
+
+.card .google-maps {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.photo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+.card p {
+    color: white;
+    word-break: break-word;;
+}
+
+.card-changeable-space {
+    height: 480px;
+    overflow: hidden;
+}
+
+.map-side {
+    position: relative;
+    bottom: 270px;
+    transition: bottom 1s;
+}
+
+.no-map-side {
+    position: relative;
+    bottom: 0;
+    transition: bottom 1s;
+}
+
+.activityCard-icon {
+    margin-top: 20px;
+}
+
+div.middle-section > div.datetime {
+    width: 40%;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        height: calc(100vh - 200px);
+        width: 70vw;
+        touch-action: none;
+        transition: transform .5s;
+    }
+
+    .card .top-section {
+        width: 70vw;
+        height: 160px;
+        margin-bottom: 0;
+    }
+
+    .top-section > .activity-photo {
+        height: 160px;
+        width: 35vw;
+        margin-right: 0;
+    }
+
+    .card .top-section > .activity-photo img {
+        height: 160px;
+        width: 35vw;
+    }
+
+    .card .top-section .title-section {
+        min-width: 30vw;
+        max-width: 30vw;
+        position: relative;
+        left: 10px;
+    }
+
+    div.middle-section > .datetime p {
+        width: 35vw;
+    }
+
+    .middle-section {
+        height: 15vh;
+        margin-bottom: 0;
+    }
+
+    .location h3, .datetime h3 {
+        margin-top: 5px;
+    }
+
+    .bottom-section {
+        margin-top: 10px;
+        height: calc(45vh - 160px);
+    }
+    .description {
+        word-break: break-word;
+        overflow: hidden;
+    }
+    .bottom-section h3 {
+        margin-top: 0;
+    }
+
+    .map-button {
+        height: calc(40vh - 210px);
+        margin-bottom: 1px;
+    }
+
+    .map-side {
+        position: relative;
+        bottom: calc(60vh - 150px);
+        transition: bottom 1s;
+    }
+}
+
